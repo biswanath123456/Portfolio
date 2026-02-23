@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biswanath Mahapatra — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">BM</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HAMBURGER NAV -->
+  <nav id="hamburger-nav">
+    <div class="logo">BM</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="profile">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">Available for opportunities</div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="line1">Biswanath</span>
+          <span class="line2">Mahapatra</span>
+        </h1>
+        <p class="hero-role"><strong>Full Stack Developer</strong> &amp; Data Enthusiast</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Biswanath.pdf')">↓ Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info →</button>
+        </div>
+        <div id="socials-container">
+          <a class="social-link" href="https://www.linkedin.com/in/biswanath-mahapatra/" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a class="social-link" href="https://github.com/biswanath123456" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+              <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number">1y+</div>
+          <div class="stat-label">Experience</div>
+        </div>
+        <div class="stat stat-divider">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat stat-divider">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+      </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-ring2"></div>
+        <img src="./assets/profile-pic.jpg" alt="Biswanath Mahapatra" class="hero-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section__text__p1 fade-up">Get To Know More</p>
+    <h1 class="title fade-up">About <span class="gradient-text">Me</span></h1>
+    <div class="about-grid fade-up">
+      <div class="about-img-wrap">
+        <img src="./assets/about_pic1.jpg" alt="About Biswanath" class="about-pic" />
+        <div class="about-img-badge">B.Tech CSE<br>Silicon Institute</div>
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+            <h3>Experience</h3>
+            <p><strong>7 months</strong> — Test Engineer Intern</p>
+            <p>Monitored SAP ISU environments, analyzed performance issues, coordinated resolutions, and generated reports for system health and improvements.</p>
+          </div>
+          <div class="details-container">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            <h3>Freelancer</h3>
+            <p><strong>Ongoing</strong> — Independent</p>
+            <p>Providing data analysis and full stack web development services — building dashboards, automating data pipelines, and creating custom web applications for clients.</p>
+          </div>
+          <div class="details-container">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <h3>Education</h3>
+            <p><strong>B.Tech, CSE</strong></p>
+            <p>Silicon Institute of Technology, Bhubaneswar</p>
+            <p>November 2020 – June 2024</p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="experience">
+    <p class="section__text__p1 fade-up">What I Work With</p>
+    <h1 class="title fade-up">Skills &amp; <span class="gradient-text">Expertise</span></h1>
+    <div class="skills-tabs fade-up">
+      <button class="skills-tab active" onclick="switchTab(event, 'web')">Web Development</button>
+      <button class="skills-tab" onclick="switchTab(event, 'data')">Data &amp; ML</button>
+      <button class="skills-tab" onclick="switchTab(event, 'other')">Other Skills</button>
+    </div>
+
+    <div id="tab-web" class="skills-panel active fade-up">
+      <div class="experience-details-container">
+        <div class="article-container">
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>HTML</h3><p class="skill-level advanced">Experienced</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>CSS</h3><p class="skill-level advanced">Experienced</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>JavaScript</h3><p class="skill-level basic">Basic</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>Django</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>Flask</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>MySQL</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>Bootstrap</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-data" class="skills-panel fade-up">
+      <div class="experience-details-container">
+        <div class="article-container">
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>Python</h3><p class="skill-level advanced">Advanced</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>TensorFlow</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>OpenCV</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>NumPy</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>Pandas</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>Power BI</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-other" class="skills-panel fade-up">
+      <div class="experience-details-container">
+        <div class="article-container">
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>Java</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>Git</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>MS Excel</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>SAP ISU</h3><p class="skill-level advanced">Experienced</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>Linux</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          <article class="skill-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><h3>Cloud Deploy</h3><p class="skill-level intermediate">Intermediate</p></div></article>
+          <article class="skill-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        <div><h3>TiDB Cloud</h3><p class="skill-level intermediate">Intermediate</p></div>
+      </article>
+      <article class="skill-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        <div><h3>Gemini AI</h3><p class="skill-level intermediate">Intermediate</p></div>
+      </article>
+      <article class="skill-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        <div><h3>REST API</h3><p class="skill-level intermediate">Intermediate</p></div>
+      </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <p class="section__text__p1 fade-up">My Achievements</p>
+    <h1 class="title fade-up"><span class="gradient-text">Certifications</span></h1>
+    <div class="certifications-container fade-up">
+      <div class="certification-card">
+        <img src="./assets/Certificate/certificate-6.png" alt="Certificate 6" class="certificate-img" />
+        <div class="cert-body"><span class="cert-issuer">Google</span><h3>Foundations: Data, Data, Everywhere</h3><p>December 31, 2024</p></div>
+      </div>
+      <div class="certification-card">
+        <img src="./assets/Certificate/certificate-1.png" alt="Certificate 1" class="certificate-img" />
+        <div class="cert-body"><span class="cert-issuer">Cisco</span><h3>Introduction to Data Science</h3><p>August 31, 2024</p></div>
+      </div>
+      <div class="certification-card">
+        <img src="./assets/Certificate/certificate-2.png" alt="Certificate 2" class="certificate-img" />
+        <div class="cert-body"><span class="cert-issuer">Cisco</span><h3>Data Analytics Essentials</h3><p>August 31, 2024</p></div>
+      </div>
+      <div class="certification-card">
+        <img src="./assets/Certificate/certificate-3.png" alt="Certificate 3" class="certificate-img" />
+        <div class="cert-body"><span class="cert-issuer">Cisco</span><h3>Python Essentials</h3><p>August 12, 2024</p></div>
+      </div>
+      <div class="certification-card">
+        <img src="./assets/Certificate/certificate-4.png" alt="Certificate 4" class="certificate-img" />
+        <div class="cert-body"><span class="cert-issuer">Forage</span><h3>BCG's Data Science Job Simulation</h3><p>September 1, 2024</p></div>
+      </div>
+      <div class="certification-card">
+        <img src="./assets/Certificate/certificate-5.png" alt="Certificate 5" class="certificate-img" />
+        <div class="cert-body"><span class="cert-issuer">Forage</span><h3>Goldman Sachs Software Engineering Job Simulation</h3><p>January 7, 2024</p></div>
+      </div>
+      <div class="certification-card">
+        <img src="./assets/Certificate/certificate-7.png" alt="Walmart Certificate" class="certificate-img" />
+        <div class="cert-body">
+          <span class="cert-issuer">Forage</span>
+          <h3>Walmart USA — Advanced Software Engineering</h3>
+          <p>August 12, 2023</p>
+        </div>
+      </div>
+      <div class="certification-card">
+        <img src="./assets/Certificate/certificate-8.png" alt="Accenture Certificate" class="certificate-img" />
+        <div class="cert-body">
+          <span class="cert-issuer">Forage</span>
+          <h3>Accenture — Developer and Technology</h3>
+          <p>August 3, 2023</p>
+        </div>
+      </div>
+
+      <div class="certification-card">
+        <img src="./assets/Certificate/certificate-9.png" alt="JP Morgan Certificate" class="certificate-img" />
+        <div class="cert-body">
+          <span class="cert-issuer">Forage</span>
+          <h3>JP Morgan & Chase — Software Engineering</h3>
+          <p>August 27, 2024</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section__text__p1 fade-up">Browse My Recent</p>
+    <h1 class="title fade-up">Featured <span class="gradient-text">Projects</span></h1>
+    <div class="experience-details-container fade-up">
+      <div class="about-containers projects-grid">
+
+        <div class="details-container color-container">
+          <div class="article-container"><img src="./assets/Project/project-1.png" alt="Calendar App" class="project-img" /></div>
+          <span class="project-tag">Web App</span>
+          <h2 class="experience-sub-title project-title">Calendar App</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/biswanath123456/Calendar'">GitHub</button>
+            <button class="btn btn-color-1 project-btn" onclick="location.href='https://biswanath123456.github.io/Calendar/'">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container"><img src="./assets/Project/project-2.png" alt="Plant Disease Prediction" class="project-img" /></div>
+          <span class="project-tag">Machine Learning</span>
+          <h2 class="experience-sub-title project-title">Plant Disease Prediction</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/biswanath123456/Plant_Disease_Prediction'">GitHub</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container"><img src="./assets/Project/flower.jpg" alt="Flower Classification" class="project-img" /></div>
+          <span class="project-tag">Deep Learning</span>
+          <h2 class="experience-sub-title project-title">Flower Classification</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/biswanath123456/MachineLearning/tree/main/Flower_classfication'">GitHub</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container"><img src="./assets/Project/project-4.png" alt="Egrad Online Exam Portal" class="project-img" /></div>
+          <span class="project-tag">Full Stack</span>
+          <h2 class="experience-sub-title project-title">Egrad Online Exam Portal</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/biswanath123456/Egrad'">GitHub</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container"><img src="./assets/Project/churn.jpg" alt="Customer Churn Analysis" class="project-img" /></div>
+          <span class="project-tag">Data Analysis</span>
+          <h2 class="experience-sub-title project-title">Customer Churn Analysis</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/biswanath123456/MachineLearning/tree/main/Churn'">GitHub</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container"><img src="./assets/Project/project-3.png" alt="Chatbot" class="project-img" /></div>
+          <span class="project-tag">AI / NLP</span>
+          <h2 class="experience-sub-title project-title">Chatbot</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/biswanath123456/Chatbot'">GitHub</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container"><img src="./assets/Project/churn.jpg" alt="Complaint Classifier" class="project-img" /></div>
+          <span class="project-tag">Machine Learning</span>
+          <h2 class="experience-sub-title project-title">Complaint Classifier</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/biswanath123456/ComplaintClassifier'">GitHub</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section__text__p1 fade-up">Get In Touch</p>
+    <h1 class="title fade-up">Let's <span class="gradient-text">Connect</span></h1>
+    <p class="contact-sub fade-up">Feel free to reach out for collaborations, opportunities, or just a friendly hello!</p>
+    <div class="contact-info-upper-container fade-up">
+      <div class="contact-info-container">
+        <!-- Replace: <img src="./assets/Icons/email.png" ...> -->
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <p><a href="mailto:biswanath2048@gmail.com">biswanath2048@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <!-- Replace: <img src="./assets/Icons/linkedin.png" ...> -->
+<svg width="28" height="28" viewBox="0 0 24 24" fill="var(--accent)" ><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <p><a href="https://www.linkedin.com/in/biswanath-mahapatra/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a onclick="scrollToTop()" style="cursor:pointer">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="footer-logo">Biswanath Mahapatra</p>
+    <p>Copyright &#169; 2024 Biswanath. All Rights Reserved.</p>
+  </footer>
+
+  <button id="arrowUpBtn" onclick="scrollToTop()" aria-label="Scroll to top">
+    <img src="./assets/Icons/arrow-up.png" alt="Arrow Up" />
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
